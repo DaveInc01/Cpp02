@@ -5,18 +5,6 @@ Fixed::Fixed(){
     std::cout << "Default constructor called" << std::endl;
 }
 
-Fixed::Fixed(const int x)
-{
-    this->x = x;
-    std::cout << "Int constructor called" << std::endl;
-}
-
-Fixed::Fixed(const float x)
-{
-    this->x = x;
-    std::cout << "Float constructor called" << std::endl;
-}
-
 Fixed::Fixed(Fixed &obj)
 {
     std::cout << "Copy constructor called" << std::endl;
