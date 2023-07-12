@@ -14,7 +14,7 @@ public:
     void operator = (const Fixed& obj);
     int  getRawBits( void ) const;
     void setRawBits( int const raw );
-    float toFloat( void ) const;
+    float toFloat( void ) const; 
 private:
     int x;
     static const int w;

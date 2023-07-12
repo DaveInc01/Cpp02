@@ -11,6 +11,19 @@ Fixed::Fixed(Fixed &obj)
     this->x = obj.getRawBits();
 }
 
+Fixed::Fixed(const int x)
+{
+    this->x = x;
+    std::cout << "Int constructor called" << std::endl;
+}
+
+Fixed::Fixed(const float float_x)
+{
+    int scaledValue = static_cast<int>(float_x * 256); 
+    
+    std::cout << "Float constructor called" << std::endl;
+}
+
 const int Fixed::w = 8;
 
 void Fixed::operator=(const Fixed &obj)
